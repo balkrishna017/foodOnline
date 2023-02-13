@@ -1,0 +1,15 @@
+{% autoescape off %}
+
+Hi {{user.first_name}},
+
+{% if is_approved %}
+Your account has been approved successfully by our admin team.
+{% else %}
+We are sorry! Your are not eligible for publishing programs on crowdBugs. For more information please contact our supprt team.
+
+{% endif %}
+
+Thanks,
+CrowdBugs Team
+
+{% endautoescape %}

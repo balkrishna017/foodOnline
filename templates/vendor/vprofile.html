@@ -1,9 +1,8 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-
 {% include 'includes/alerts.html' %}
-<<!-- Main Section Start -->
+
 <div class="main-section">
     {% include 'includes/cover.html' %}
     <div class="page-section account-header buyer-logged-in">
@@ -15,41 +14,7 @@
                 <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
                     <div class="user-dashboard loader-holder">
                         <div class="user-holder">
-                            <h5 class="text-uppercase">Overview</h5>
-                            <div class="row">
-                                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                                    <div class="card">
-                                        <div class="card-header">
-                                            Total Orders
-                                        </div>
-                                        <div class="card-body text-center">
-                                            <a href="#"><h5 class="card-title">1243</h5></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                                    <div class="card">
-                                        <div class="card-header">
-                                            Total Revenue
-                                        </div>
-                                        <div class="card-body text-center">
-                                            <a href="#"><h5 class="card-title">$1243</h5></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                                    <div class="card">
-                                        <div class="card-header">
-                                            This Month Revenue
-                                        </div>
-                                        <div class="card-body text-center">
-                                           <a href="#"><h5 class="card-title">$1243</h5></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <br>
-                            <br>
+                            
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                 <div class="row">
                                     <div class="element-title has-border right-filters-row">
@@ -124,9 +89,5 @@
         </div>
     </div>
 </div>
-<!-- Main Section End -->
 
 {% endblock %}
-
-
-

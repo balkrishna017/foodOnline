@@ -6,8 +6,9 @@ from django.utils.http import urlsafe_base64_decode
 from django.contrib.auth.tokens import default_token_generator
 from .forms import UserForm
 from vendor.forms import VendorForm
+from vendor.models import Vendor
 from .models import User, UserProfile
-from .utils import detectUser, send_verification_email, send_password_reset_email
+from .utils import detectUser, send_verification_email
 
 
 # Restrict the vendor from accessing the customer page
@@ -182,6 +183,7 @@ def custDashboard(request):
 @login_required(login_url='login')
 @user_passes_test(check_role_vendor)
 def vendorDashboard(request):
+
     return render(request, 'accounts/vendorDashboard.html')
 
 
